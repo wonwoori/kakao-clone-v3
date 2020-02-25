@@ -1,0 +1,43 @@
+.find {
+  margin-top: 50px;
+}
+
+.find .find__header-list {
+  display: flex; /* 아이콘+이름 세트들을 플렉스 한 것*/
+  justify-content: space-around;
+
+  /*justify-content: space-between;*/
+  /*padding: 0px 20px;*/
+}
+
+.find .header-btn {
+  display: flex; /* 텍스트를 아이콘 밑에 놓고 가운데 정렬시키려고 한 것임*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.find .header-btn__title {
+  /* 헤더 타이틀에다가 블록을 해줘야 플렉스가 타이틀 앞에서 블록이 되는 느깜인가?? */
+  display: block;
+}
+
+.find .header-btn__title {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.find .header-btn__icon {
+  font-size: 12px;
+}
+
+.find .find__recommended {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.find .find__title {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}

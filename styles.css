@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+/* 
+짧은걸 여러개 써야 나중에 디버깅할 때 편하다. 스크롤 쭉쭉 아래로 내리는거 너무 불편. 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+패딩을 추가할 거지만, 박스 사이즈를 키우지는 말아줘. 
+왜냐면 원래 박스는 패딩으 추가하면 300+20 처럼 늘어나버림. 
+
+패딩에 값을 부여하면 박스도 같이  커지지만
+box-sizing: border-box; 를 사용하면 박스의 크기는 고정되있는상태에서 패딩에 값이 부여되는거네요!
+*/
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.3s ease-in-out;
+}
